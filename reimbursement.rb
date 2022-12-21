@@ -5,5 +5,11 @@ def calculate_reimbursement(projects)
 
     projects.each_with_index do |project, index|
         full_days = (project[:end_date] - project[:start_date] + 1) / 2
+
+        if project[:city] == 'low'
+            reimbursement += 45 * 2
+
+            reimbursement += 75 * full_days
+        end
     end
 end
