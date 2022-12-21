@@ -14,5 +14,9 @@ def calculate_reimbursement(projects)
             reimbursement += 55 * 2
             reimbursement += 85 * full_days
         end
+
+        if index < projects.length - 1 && (project[:end_date] + 1) < projects[index + 1][:start_date]
+            travel_days = (projects[index + 1][:start_date] - project[:end_date] -1)
+        end
     end
 end
