@@ -27,3 +27,4 @@ def calculate_reimbursement(projects)
     end
     reimbursement
 end
+
