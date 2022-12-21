@@ -8,8 +8,11 @@ def calculate_reimbursement(projects)
 
         if project[:city] == 'low'
             reimbursement += 45 * 2
-
             reimbursement += 75 * full_days
+
+        else
+            reimbursement += 55 * 2
+            reimbursement += 85 * full_days
         end
     end
 end
